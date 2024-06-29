@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordle PPY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <h1 id="titulo">Wordle PPY</h1>
+    <div id="oportunidades">
+      <h4>Ganados: <span id="ganados">1</span></h4>
+      <h4>Perdidos: <span id="perdidos">1</span></h4>
+      <img src="./resetPuntajes.png" alt="resetPuntajes.png" id="btnResetPuntajes">
+    </div>
+
+    <div id="control">
+      <button id="reset">Reset</button>
+      <span>Intentos:</span>
+      <h3 id="intentos"></h3>
+    </div>
+    <input type="text" id="guess-input" placeholder="Ingresa la palabra" autocomplete="off">
+    <button id="guess-button">Intentar</button>
+    <div id="grid"></div>
+    <p id="guesses"></p>
+  </body>
+</html>
